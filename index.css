@@ -40,13 +40,10 @@ body {
 }
 
 button {
-    background-color: white;
-    border-radius: 100px;
-    border: 0;
-    color: black;
-    font-weight: bold;
-    width: 40px;
-    height: 40px;
+    background-color: rgba(1, 1, 1, 0%);
+    border: none;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
@@ -66,3 +63,22 @@ button {
         opacity: 1;
     }
 }
+
+.arrow {
+    border: solid whitesmoke;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+  }
+
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
