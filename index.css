@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+}
+
+
+.carousel {
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel .carousel-item,
+.carousel-item-hidden{
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel-item img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: white;
+    border-radius: 100px;
+    border: 0;
+    color: black;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.carousel .carousel-actions button#carousel-btn-prev {
+    margin-left: 15px;
+}
+
+.carousel .carousel-actions button#carousel-btn-next {
+    margin-right: 15px;
+}
+
+@keyframes fadeVisibility {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
