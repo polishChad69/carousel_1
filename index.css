@@ -9,7 +9,7 @@ body {
 
 
 .carousel {
-    max-width: 600px;
+    max-width: 1000px;
     position: relative;
     margin: 0 auto;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .carousel .carousel-item img {
-    max-width: 600px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
 }
@@ -71,7 +71,6 @@ button {
     padding: 6px;
   }
 
-  
   .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
